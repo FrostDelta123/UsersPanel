@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="container" prefHeight="400.0002999999924" prefWidth="628.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.MsgController">
+  <children>
+    <TextField id="login_field" fx:id="subjectTextField" layoutX="39.0" layoutY="93.0" prefHeight="34.0" prefWidth="550.0" promptText="Тема..." style="-fx-font-size: 18px;&#10;-fx-background-color: #fafafa;&#10;-fx-border-color: silver;&#10;-fx-border-radius: 5px;" />
+    <Label layoutX="174.0" layoutY="37.0" styleClass="text_title" text="Обращение к Администрации" textFill="GREY" />
+    <Button id="" fx:id="sendMsgButton" layoutX="39.0" layoutY="344.0" mnemonicParsing="false" onAction="#sendMessage" prefWidth="550.0" style="" styleClass="btn" text="Отправить" textFill="WHITE" />
+    <TextArea fx:id="msgTextArea" layoutX="39.0" layoutY="136.0" prefHeight="191.0" prefWidth="550.0" promptText="Сообщение... (Не более 1000 и не менее 50 символов)" style="-fx-font-size: 18px;&#10;-fx-background-color: #fafafa;&#10;-fx-border-color: silver;&#10;-fx-border-radius: 5px;" wrapText="true" />
+  </children>
+  <stylesheets>
+    <URL value="@assets/style/styles.css" />
+  </stylesheets>
+</AnchorPane>

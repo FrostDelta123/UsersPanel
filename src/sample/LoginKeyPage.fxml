@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="container" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.LoginKeyPageController">
+  <children>
+    <AnchorPane layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="500.0" styleClass="row">
+      <children>
+        <TextField id="password_textField" fx:id="key_textField" focusTraversable="false" layoutX="20.0" layoutY="101.0" prefHeight="41.0" prefWidth="461.0000999999975" promptText="Никнейм..." styleClass="form-control" />
+        <Button fx:id="auth_button" layoutX="20.0" layoutY="181.0" mnemonicParsing="false" onAction="#keyAuth" prefHeight="34.0" prefWidth="461.0" styleClass="btn" text="Вход" />
+        <Button fx:id="back_button" layoutX="20.0" layoutY="237.0" mnemonicParsing="false" onAction="#goLoginPage" prefHeight="34.0" prefWidth="461.0" styleClass="btn" text="Назад" />
+        <Label fx:id="error_label" disable="false" focusTraversable="false" layoutX="223.0" layoutY="162.0" styleClass="error_title" text="Ошибка" visible="false" />
+        <Label layoutX="132.0" layoutY="56.0" styleClass="text_title" text="Авторизация через ключ" />
+      </children>
+    </AnchorPane>
+    <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="263.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@assets/image/favicon_1_-5.png" />
+      </image>
+    </ImageView>
+  </children>
+  <stylesheets>
+    <URL value="@assets/style/styles.css" />
+  </stylesheets>
+</AnchorPane>
